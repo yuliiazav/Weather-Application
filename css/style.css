@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background: #fff;
+    color: #202124;
+    font-family: 'PT Serif', serif;
+}
+
+.weather-app-wrapper {
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.weather-app {
+    padding: 20px 50px;
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+}
+
+#city {
+    margin: 10px 0;
+    line-height: 29px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    color: #272142;
+}
+
+.weather-list {
+    padding: 0;
+    margin: 0;
+}
+
+.weather-list li {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgba(39, 33, 66, .4);
+    font-size: 17px;
+    line-height: 20px;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.weather-list li strong {
+    color: #f65282;
+    font-weight: 400;
+}
+
+.weather-list li .weather-list__data {
+    color: #f65282;
+    font-weight: 400;
+}
+
+.weather-list_secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.weather-list_main {
+    margin-bottom: 40px;
+}
+
+.units {
+    color: #202124;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 6px;
+    vertical-align: top;
+}
+
+.units.celsius-unit {
+    padding-left: 6px;
+}
+
+#temperature {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.weather-temperature #icon {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.weather-temperature {
+    align-items: center;
+}
+
+.weather-list_secondarycontainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 60px;
+}
+
+#description {
+    font-style: italic;
+    color: #78778b;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.unit-link {
+    text-decoration: none;
+}
+
+.active {
+    color: #000;
+    cursor: default;
+}
+
+.weather-forecast {
+    text-align: center;
+}
+
+.weather-forecast-temperature-min {
+    color: rgba(39, 33, 66, .4);
+    font-weight: 800;
+}
+
+.overview__weatherdetails {
+    margin-bottom: 25px;
+}
+
+.weather-forecast-date {
+    font-size: 21px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-style: italic;
+    color: #78778b;
+}
+
+.opensource-info {
+    text-align: right;
+    display: block;
+}

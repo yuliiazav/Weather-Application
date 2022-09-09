@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="search" placeholder="Type a city.." class="form-control" id="city-input" autocomplete="off" />
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary w-100 submit-btn">Search</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-outline-primary w-100 current-btn">Current</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="overview">
+                    <h1 id="city">Your city is ...?</h1>
+                    <ul class="weather-list weather-list_main">
+                        <li>Last updated: <span id="date" class="weather-list__data current-day">Monday,</span> <span id="time" class="weather-list__data current-time">12:00</span> </li>
+                        <li id="description">Sunny</li>
+                    </ul>
+                </div>
+                <div class="overview__weatherdetails">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex weather-temperature">
+                                <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt="Sunny" id="icon" />
+                                <div>
+                                    <strong id="temperature">20</strong><span class="units celsius-unit"><a href="#"
+                                            class="unit-link celsius-link active">°C</a> |
+                                    </span>
+                                    <span class="units fahrenheit-unit"><a href="#"
+                                            class="unit-link fahrenheit-link">°F</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="weather-list_secondarycontainer">
+                                <ul class="weather-list weather-list_secondary">
+                                    <li>Humidity: <span id="humidity" class="weather-list__data">5 %</span></li>
+                                    <li>Wind: <span id="wind" class="weather-list__data">10 m/h</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-forecast" id="forecast">
+                </div>
+            </div>
+            <small class="opensource-info">
+                <a href="https://github.com/yuliiazav/VanillaWeatherApp" target="_blank">Open-source code</a>
+                by Yuliia Zavistovska
+            </small>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
